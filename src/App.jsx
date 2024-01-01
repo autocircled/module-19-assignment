@@ -14,6 +14,7 @@ import ContactPage from './pages/ContactPage'
 import CartPage from './pages/CartPage'
 import CheckoutPage from './pages/CheckoutPage'
 import ThankYouPage from './pages/ThankYouPage'
+import NotFoundPage from './pages/NotFoundPage'
 function App() {
 
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/not-found" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )
