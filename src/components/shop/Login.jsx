@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Login = () => {
 	return (
@@ -27,7 +28,7 @@ const Login = () => {
 														<a className="flote-none">Remember me</a>
 														<a href="#">Forgot Password?</a>
 													</div>
-													<button type="submit"><span>Login</span></button>
+													<Link to="/account" className=""><span>Login</span></Link>
 												</div>
 											</form>
 										</div>
@@ -41,7 +42,7 @@ const Login = () => {
 												<input type="password" name="user-password" placeholder="Password" />
 												<input name="user-email" placeholder="Email" type="email" />
 												<div className="button-box">
-													<button type="submit"><span>Register</span></button>
+													<Link to="/account" className=""><span>Register</span></Link>
 												</div>
 											</form>
 										</div>
