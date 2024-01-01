@@ -8,12 +8,14 @@ import './assets/css/jquery-ui.min.css'
 import './assets/css/style.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
+import ShopPage from './pages/ShopPage'
 function App() {
   
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/shop" element={<ShopPage />} />
       </Routes>
     </BrowserRouter>
   )
