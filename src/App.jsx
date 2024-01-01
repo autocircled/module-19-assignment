@@ -11,6 +11,7 @@ import HomePage from './pages/HomePage'
 import ShopPage from './pages/ShopPage'
 import SingleProductPage from './pages/SingleProductPage'
 import ContactPage from './pages/ContactPage'
+import CartPage from './pages/CartPage'
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/single-product" element={<SingleProductPage />} />
+        <Route path="/cart" element={<CartPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
