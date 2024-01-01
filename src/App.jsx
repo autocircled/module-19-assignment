@@ -18,6 +18,7 @@ import ThankYouPage from './pages/ThankYouPage'
 import NotFoundPage from './pages/NotFoundPage'
 import FaqPage from './pages/FaqPage'
 import CartEmptyPage from './pages/CartEmptyPage'
+import PrivacyPage from './pages/PrivacyPage'
 function App() {
 
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/not-found" element={<NotFoundPage />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPage />} />
       </Routes>
     </BrowserRouter>
   )
