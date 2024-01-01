@@ -1,16 +1,22 @@
 import { useEffect } from 'react'
+import VenoBox from 'venobox';
 
 const Footer = () => {
-	useEffect(() => {
+    useEffect(() => {
         const sliderBGImages = document.querySelectorAll('[data-bg-image]');
-        console.log(sliderBGImages);
         Array.from(sliderBGImages).forEach((el) => {
             console.log(el.getAttribute('data-bg-image'));
             el.style.backgroundImage = `url(${el.getAttribute('data-bg-image')})`;
         })
+
+
+        // venobox for product gallery image
+        new VenoBox({
+            selector: '.venobox'
+        });
     }, [])
-  return (
-	<div className="footer-area">
+    return (
+        <div className="footer-area">
             <div className="footer-container">
                 <div className="footer-top">
                     <div className="container">
@@ -31,17 +37,17 @@ const Footer = () => {
                                         </li>
                                         <li>
                                             <a title="Tumblr" target="_blank" rel="noopener noreferrer" href="#"><i
-                                                    className="fa fa-tumblr" aria-hidden="true"></i>
+                                                className="fa fa-tumblr" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a title="Facebook" target="_blank" rel="noopener noreferrer" href="#"><i
-                                                    className="fa fa-twitter" aria-hidden="true"></i>
+                                                className="fa fa-twitter" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a title="Instagram" target="_blank" rel="noopener noreferrer" href="#"><i
-                                                    className="fa fa-instagram" aria-hidden="true"></i>
+                                                className="fa fa-instagram" aria-hidden="true"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -56,15 +62,15 @@ const Footer = () => {
                                         <div className="footer-row">
                                             <ul className="align-items-center">
                                                 <li className="li"><a className="single-link" href="my-account.html">My
-                                                        Account</a></li>
+                                                    Account</a></li>
                                                 <li className="li"><a className="single-link" href="contact.html">Contact</a>
                                                 </li>
                                                 <li className="li"><a className="single-link" href="cart.html">Shopping cart</a>
                                                 </li>
                                                 <li className="li"><a className="single-link"
-                                                        href="shop-left-sidebar.html">Shop</a></li>
+                                                    href="shop-left-sidebar.html">Shop</a></li>
                                                 <li className="li"><a className="single-link" href="login.html">Services
-                                                        Login</a></li>
+                                                    Login</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -79,15 +85,15 @@ const Footer = () => {
                                         <div className="footer-row">
                                             <ul className="align-items-center">
                                                 <li className="li"><a className="single-link" href="my-account.html">My
-                                                        Account</a></li>
+                                                    Account</a></li>
                                                 <li className="li"><a className="single-link" href="contact.html">Contact</a>
                                                 </li>
                                                 <li className="li"><a className="single-link" href="cart.html">Shopping cart</a>
                                                 </li>
                                                 <li className="li"><a className="single-link"
-                                                        href="shop-left-sidebar.html">Shop</a></li>
+                                                    href="shop-left-sidebar.html">Shop</a></li>
                                                 <li className="li"><a className="single-link" href="login.html">Services
-                                                        Login</a></li>
+                                                    Login</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -119,11 +125,11 @@ const Footer = () => {
                             <div className="row flex-md-row-reverse align-items-center">
                                 <div className="col-md-6 text-center text-md-end">
                                     <div className="payment-mth"><a href="#"><img className="img img-fluid"
-                                                src="assets/images/icons/payment.png" alt="payment-image" /></a></div>
+                                        src="assets/images/icons/payment.png" alt="payment-image" /></a></div>
                                 </div>
                                 <div className="col-md-6 text-center text-md-start">
                                     <p className="copy-text"> © 2022 <strong>Hmart</strong> Made With <i className="fa fa-heart"
-                                            aria-hidden="true"></i> By <a className="company-name"
+                                        aria-hidden="true"></i> By <a className="company-name"
                                             href="https://themeforest.net/user/codecarnival/portfolio">
                                             <strong> Codecarnival </strong></a>.</p>
                                 </div>
@@ -133,7 +139,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default Footer

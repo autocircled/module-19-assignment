@@ -9,6 +9,7 @@ import './assets/css/style.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ShopPage from './pages/ShopPage'
+import SingleProductPage from './pages/SingleProductPage'
 function App() {
   
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
+        <Route path="/single-product" element={<SingleProductPage />} />
       </Routes>
     </BrowserRouter>
   )

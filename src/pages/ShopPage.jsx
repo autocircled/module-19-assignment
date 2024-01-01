@@ -5,7 +5,7 @@ import ProductListGrid from '../components/shop/ProductListGrid'
 const ShopPage = () => {
   return (
 	<Layout>
-		<BreadcrumbSection title={["Home", "shop"]}/>
+		<BreadcrumbSection title="Shop" list={["Home", "shop"]}/>
 		<ProductListGrid />
 	</Layout>
   )
