@@ -13,6 +13,7 @@ import SingleProductPage from './pages/SingleProductPage'
 import ContactPage from './pages/ContactPage'
 import CartPage from './pages/CartPage'
 import CheckoutPage from './pages/CheckoutPage'
+import ThankYouPage from './pages/ThankYouPage'
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/single-product" element={<SingleProductPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
