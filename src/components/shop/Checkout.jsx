@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 
 const Checkout = () => {
 
@@ -262,7 +263,7 @@ const Checkout = () => {
 								</div>
 							</div>
 							<div className="Place-order mt-25">
-								<a className="btn-hover" href="#">Place Order</a>
+								<Link className="btn-hover" to="/thank-you">Place Order</Link>
 							</div>
 						</div>
 					</div>
