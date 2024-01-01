@@ -1,5 +1,5 @@
 
-const FAQ = () => {
+const Faq = () => {
 	return (
 		<div className="login-register-area pb-100px pt-100px faq-area">
 			<div className="container">
@@ -96,4 +96,4 @@ const FAQ = () => {
 	)
 }
 
-export default FAQ
+export default Faq
