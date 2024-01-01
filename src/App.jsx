@@ -20,6 +20,7 @@ import FaqPage from './pages/FaqPage'
 import CartEmptyPage from './pages/CartEmptyPage'
 import PrivacyPage from './pages/PrivacyPage'
 import TosPage from './pages/TosPage'
+import LoginPage from './pages/LoginPage'
 function App() {
 
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/privacy-policy" element={<PrivacyPage />} />
         <Route path="/tos" element={<TosPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   )
