@@ -19,6 +19,7 @@ import NotFoundPage from './pages/NotFoundPage'
 import FaqPage from './pages/FaqPage'
 import CartEmptyPage from './pages/CartEmptyPage'
 import PrivacyPage from './pages/PrivacyPage'
+import TosPage from './pages/TosPage'
 function App() {
 
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/not-found" element={<NotFoundPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/privacy-policy" element={<PrivacyPage />} />
+        <Route path="/tos" element={<TosPage />} />
       </Routes>
     </BrowserRouter>
   )
