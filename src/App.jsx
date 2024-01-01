@@ -22,6 +22,8 @@ import PrivacyPage from './pages/PrivacyPage'
 import TosPage from './pages/TosPage'
 import LoginPage from './pages/LoginPage'
 import AccountPage from './pages/AccountPage'
+import BlogPage from './pages/BlogPage'
+import BlogSinglePage from './pages/BlogSinglePage'
 function App() {
 
   return (
@@ -41,6 +43,8 @@ function App() {
         <Route path="/tos" element={<TosPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/account" element={<AccountPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/single-post" element={<BlogSinglePage />} />
       </Routes>
     </BrowserRouter>
   )
