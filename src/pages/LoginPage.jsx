@@ -1,6 +1,6 @@
 import Layout from "../components/Layout"
 import BreadcrumbSection from "../components/common/BreadcrumbSection"
-import Login from "../components/common/Login"
+import Login from "../components/shop/Login"
 
 const LoginPage = () => {
 	return (
