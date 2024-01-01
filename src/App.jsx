@@ -10,14 +10,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ShopPage from './pages/ShopPage'
 import SingleProductPage from './pages/SingleProductPage'
+import ContactPage from './pages/ContactPage'
 function App() {
-  
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/single-product" element={<SingleProductPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   )
