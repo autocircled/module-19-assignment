@@ -1,17 +1,9 @@
 
-import { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
 const HeroSection = () => {
-    useEffect(() => {
-        const sliderWrapper = document.querySelector('.hero-slider .swiper-wrapper');
-        const sliderBGImages = sliderWrapper.querySelectorAll('[data-bg-image]');
-        Array.from(sliderBGImages).forEach((el) => {
-            // console.log(el.getAttribute('data-bg-image'));
-            el.style.backgroundImage = `url(${el.getAttribute('data-bg-image')})`;
-        })
-    }, [])
+    
 
     const navigation = {
         nextEl: '.swiper-button-next',
