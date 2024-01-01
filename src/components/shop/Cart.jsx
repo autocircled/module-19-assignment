@@ -84,7 +84,7 @@ const CartSection = () => {
 										</div>
 										<div className="cart-clear">
 											<button>Update Shopping Cart</button>
-											<a href="#">Clear Shopping Cart</a>
+											<Link to="/cart-empty">Clear Shopping Cart</Link>
 										</div>
 									</div>
 								</div>
