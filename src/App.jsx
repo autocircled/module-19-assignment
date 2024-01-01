@@ -1,4 +1,5 @@
-import './assets/css/bootstrap.min.css'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/css/font.awesome.css'
 import './assets/css/pe-icon-7-stroke.css'
 import './assets/css/animate.min.css'
@@ -15,6 +16,7 @@ import CartPage from './pages/CartPage'
 import CheckoutPage from './pages/CheckoutPage'
 import ThankYouPage from './pages/ThankYouPage'
 import NotFoundPage from './pages/NotFoundPage'
+import FaqPage from './pages/FaqPage'
 function App() {
 
   return (
@@ -28,6 +30,7 @@ function App() {
         <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/not-found" element={<NotFoundPage />} />
+        <Route path="/faq" element={<FaqPage />} />
       </Routes>
     </BrowserRouter>
   )
