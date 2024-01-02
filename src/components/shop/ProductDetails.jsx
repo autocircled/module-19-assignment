@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 const ProductDetails = () => {
 
     const navigation = {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next.uu',
+        prevEl: '.swiper-button-prev.mm',
     }
 
     return (
@@ -84,8 +85,8 @@ const ProductDetails = () => {
                             </Swiper>
 
                             <div className="swiper-buttons">
-                                <div className="swiper-button-next"></div>
-                                <div className="swiper-button-prev"></div>
+                                <div className="swiper-button-next uu"></div>
+                                <div className="swiper-button-prev mm"></div>
                             </div>
                         </div>
                     </div>
@@ -143,14 +144,14 @@ const ProductDetails = () => {
                                     <input className="cart-plus-minus-box" type="text" name="qtybutton" defaultValue="1" />
                                 </div>
                                 <div className="pro-details-cart">
-                                    <button className="add-cart"> Add To
-                                        Cart</button>
+                                    <Link to={"/cart"} className="add-cart"> Add To
+                                        Cart</Link>
                                 </div>
                                 <div className="pro-details-compare-wishlist pro-details-wishlist ">
-                                    <a href="wishlist.html"><i className="pe-7s-like"></i></a>
+                                    <Link to={"/wishlist"}><i className="pe-7s-like"></i></Link>
                                 </div>
                                 <div className="pro-details-compare-wishlist pro-details-wishlist ">
-                                    <a href="compare.html"><i className="pe-7s-refresh-2"></i></a>
+                                    <Link to={"#"}><i className="pe-7s-refresh-2"></i></Link>
                                 </div>
                             </div>
                         </div>

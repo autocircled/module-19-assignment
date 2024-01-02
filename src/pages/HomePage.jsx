@@ -14,24 +14,24 @@ const HomePage = () => {
 		image: "assets/images/fancy/fashion-bg.webp",
 		title: "Smart Fashion",
 		subtitle: "With Smart Devices",
-		link: "shop-left-sidebar.html",
+		link: "/shop",
 		linkText: "Shop All Devices"
-				
+
 	}
-  return (
-	<>
-		<Layout>
-			<HeroSection />
-			<BannerSection />
-			<ProductSection	/>
-			<FancySection data={fancyData} />
-			<FeaturedOffer />
-			<TestimonialSection />
-			<BrandSection />
-			<BlogSection />
-		</Layout>
-	</>
-  )
+	return (
+		<>
+			<Layout>
+				<HeroSection />
+				<BannerSection />
+				<ProductSection />
+				<FancySection data={fancyData} />
+				<FeaturedOffer />
+				<TestimonialSection />
+				<BrandSection />
+				<BlogSection />
+			</Layout>
+		</>
+	)
 }
 
 export default HomePage

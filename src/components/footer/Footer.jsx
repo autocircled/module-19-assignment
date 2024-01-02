@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import VenoBox from 'venobox';
 
 const Footer = () => {
     useEffect(() => {
         const sliderBGImages = document.querySelectorAll('[data-bg-image]');
         Array.from(sliderBGImages).forEach((el) => {
-            console.log(el.getAttribute('data-bg-image'));
             el.style.backgroundImage = `url(${el.getAttribute('data-bg-image')})`;
         })
 
@@ -32,90 +32,73 @@ const Footer = () => {
                                     </p>
                                     <ul className="link-follow">
                                         <li>
-                                            <a className="m-0" title="Twitter" target="_blank" rel="noopener noreferrer"
-                                                href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <Link className="m-0" title="Twitter" target="_blank" rel="noopener noreferrer"
+                                                to={"/"}><i className="fa fa-facebook" aria-hidden="true"></i></Link>
                                         </li>
                                         <li>
-                                            <a title="Tumblr" target="_blank" rel="noopener noreferrer" href="#"><i
+                                            <Link title="Tumblr" target="_blank" rel="noopener noreferrer" to={"/"}><i
                                                 className="fa fa-tumblr" aria-hidden="true"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a title="Facebook" target="_blank" rel="noopener noreferrer" href="#"><i
+                                            <Link title="Facebook" target="_blank" rel="noopener noreferrer" to={"/"}><i
                                                 className="fa fa-twitter" aria-hidden="true"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a title="Instagram" target="_blank" rel="noopener noreferrer" href="#"><i
+                                            <Link title="Instagram" target="_blank" rel="noopener noreferrer" to={"/"}><i
                                                 className="fa fa-instagram" aria-hidden="true"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            {/* <!-- End single blog -->
-                            <!-- Start single blog --> */}
                             <div className="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-60px">
                                 <div className="single-wedge">
-                                    <h4 className="footer-herading">Services</h4>
+                                    <h4 className="footer-herading">Account</h4>
                                     <div className="footer-links">
                                         <div className="footer-row">
                                             <ul className="align-items-center">
-                                                <li className="li"><a className="single-link" href="my-account.html">My
-                                                    Account</a></li>
-                                                <li className="li"><a className="single-link" href="contact.html">Contact</a>
+                                                <li className="li"><Link className="single-link" to={"/account"}>My
+                                                    Account</Link></li>
+                                                <li className="li"><Link className="single-link" to={"/contact"}>Contact</Link>
                                                 </li>
-                                                <li className="li"><a className="single-link" href="cart.html">Shopping cart</a>
+                                                <li className="li"><Link className="single-link" to={"/cart"}>Shopping cart</Link>
                                                 </li>
-                                                <li className="li"><a className="single-link"
-                                                    href="shop-left-sidebar.html">Shop</a></li>
-                                                <li className="li"><a className="single-link" href="login.html">Services
-                                                    Login</a></li>
+                                                <li className="li"><Link className="single-link"
+                                                    to={"/shop"}>Shop</Link></li>
+                                                <li className="li"><Link className="single-link" to={"/login"}>Login</Link></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {/* <!-- End single blog -->
-                            <!-- Start single blog --> */}
                             <div className="col-md-6 col-lg-3 col-sm-6 mb-lm-30px pl-lg-40px">
                                 <div className="single-wedge">
-                                    <h4 className="footer-herading">My Account</h4>
+                                    <h4 className="footer-herading">Important Links</h4>
                                     <div className="footer-links">
                                         <div className="footer-row">
                                             <ul className="align-items-center">
-                                                <li className="li"><a className="single-link" href="my-account.html">My
-                                                    Account</a></li>
-                                                <li className="li"><a className="single-link" href="contact.html">Contact</a>
-                                                </li>
-                                                <li className="li"><a className="single-link" href="cart.html">Shopping cart</a>
-                                                </li>
-                                                <li className="li"><a className="single-link"
-                                                    href="shop-left-sidebar.html">Shop</a></li>
-                                                <li className="li"><a className="single-link" href="login.html">Services
-                                                    Login</a></li>
+                                                <li className="li"><Link className="single-link" to={"/faq"}>FAQ</Link></li>
+                                                <li className="li"><Link className="single-link" to={"/privacy-policy"}>Privacy Policy</Link></li>
+                                                <li className="li"><Link className="single-link" to={"/tos"}>Terms of Use</Link></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {/* <!-- End single blog -->
-                            <!-- Start single blog --> */}
                             <div className="col-md-6 col-lg-3 col-sm-12">
                                 <div className="single-wedge">
                                     <h4 className="footer-herading">Contact Info</h4>
                                     <div className="footer-links">
-                                        {/* <!-- News letter area --> */}
                                         <p className="address">Address: Your Address Goes Here.</p>
-                                        <p className="phone">Phone/Fax:<a href="tel:0123456789"> 0123456789</a></p>
-                                        <p className="mail">Email:<a href="mailto:demo@example.com"> demo@example.com</a>
+                                        <p className="phone">Phone/Fax:<Link to={"tel:0123456789"}> 0123456789</Link></p>
+                                        <p className="mail">Email:<Link to={"mailto:demo@example.com"}> demo@example.com</Link>
                                         </p>
-                                        <p className="mail"><a href="https://demo@example.com/"> demo@example.com</a></p>
-                                        {/* <!-- News letter area  End --> */}
+                                        <p className="mail"><Link to={"https://demo@example.com/"}> demo@example.com</Link></p>
                                     </div>
                                 </div>
                             </div>
-                            {/* <!-- End single blog --> */}
                         </div>
                     </div>
                 </div>

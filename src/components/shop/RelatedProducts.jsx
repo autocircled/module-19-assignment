@@ -4,8 +4,8 @@ import { Navigation } from 'swiper/modules';
 const RelatedProducts = () => {
 
 	const navigation = {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next.nn',
+		prevEl: '.swiper-button-prev.pp',
 	}
 
 	return (
@@ -46,6 +46,7 @@ const RelatedProducts = () => {
 										slidesPerView: 4,
 									},
 								}}
+								className="mySwiper3"
 
 							>
 								<SwiperSlide>
@@ -318,8 +319,8 @@ const RelatedProducts = () => {
 							</Swiper>
 
 							<div className="swiper-buttons">
-								<div className="swiper-button-next"></div>
-								<div className="swiper-button-prev"></div>
+								<div className="swiper-button-next nn"></div>
+								<div className="swiper-button-prev pp"></div>
 							</div>
 						</div>
 					</div>

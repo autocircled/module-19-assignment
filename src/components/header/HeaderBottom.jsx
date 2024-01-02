@@ -27,11 +27,10 @@ const HeaderBottom = () => {
 								<Link to="/cart" className="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
 									<i className="pe-7s-shopbag"></i>
 									<span className="header-action-num">01</span>
-									{/* <span className="cart-amount">€30.00</span> */}
 								</Link>
-								<a href="#offcanvas-mobile-menu" className="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+								<Link to="#offcanvas-mobile-menu" className="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
 									<i className="pe-7s-menu"></i>
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -42,7 +41,7 @@ const HeaderBottom = () => {
 					<div className="row justify-content-between align-items-center">
 						<div className="col-lg-3 col">
 							<div className="header-logo">
-								<a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
+								<Link to="/"><img src="assets/images/logo/logo.png" alt="Site Logo" /></Link>
 							</div>
 						</div>
 						<div className="col-lg-6 d-none d-lg-block">
@@ -55,21 +54,18 @@ const HeaderBottom = () => {
 						</div>
 						<div className="col-lg-3 col">
 							<div className="header-actions">
-								{/* <!-- Single Wedge Start --> */}
-								<a href="#offcanvas-wishlist" className="header-action-btn offcanvas-toggle">
+								<Link to="/wishlist" className="header-action-btn offcanvas-toggle">
 									<i className="pe-7s-like"></i>
-								</a>
-								{/* <!-- Single Wedge End --> */}
-								<a href="#offcanvas-cart"
+								</Link>
+								<Link to="/cart"
 									className="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
 									<i className="pe-7s-shopbag"></i>
 									<span className="header-action-num">01</span>
-									{/* <!-- <span className="cart-amount">€30.00</span> --> */}
-								</a>
-								<a href="#offcanvas-mobile-menu"
+								</Link>
+								<Link to="#offcanvas-mobile-menu"
 									className="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
 									<i className="pe-7s-menu"></i>
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>

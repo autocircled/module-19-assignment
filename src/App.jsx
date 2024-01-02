@@ -24,6 +24,7 @@ import LoginPage from './pages/LoginPage'
 import AccountPage from './pages/AccountPage'
 import BlogPage from './pages/BlogPage'
 import BlogSinglePage from './pages/BlogSinglePage'
+import WishlistPage from './pages/WishlistPage'
 function App() {
 
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/single-product" element={<SingleProductPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/wishlist" element={<WishlistPage />} />
         <Route path="/cart-empty" element={<CartEmptyPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
