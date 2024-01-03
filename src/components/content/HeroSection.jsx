@@ -22,12 +22,12 @@ const HeroSection = () => {
                     >
                         <SwiperSlide>
                             <div className="hero-slide-item slider-height swiper-slide bg-color1"
-                                data-bg-image="assets/images/hero/bg/hero-bg-1.webp">
+                                data-bg-image="assets/images/hero/bg/bg.png">
                                 <div className="container h-100">
                                     <div className="row h-100">
                                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 align-self-center sm-center-view">
                                             <div className="hero-slide-content slider-animated-1">
-                                                <span className="category">Welcome To Hmart</span>
+                                                <span className="category">Welcome To n-shop</span>
                                                 <h2 className="title-1">Your Home <br /> Smart Devices & <br /> Best Solution</h2>
                                                 <Link to="/single-product" className="btn btn-primary text-capitalize">Shop
                                                     All Devices</Link>
@@ -37,7 +37,7 @@ const HeroSection = () => {
                                             className="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center position-relative align-items-end">
                                             <div className="show-case">
                                                 <div className="hero-slide-image">
-                                                    <img src="assets/images/hero/inner-img/hero-1-1.png" alt="" />
+                                                    <img src="assets/images/hero/inner-img/hero-2.png" alt="" />
                                                 </div>
                                             </div>
                                         </div>
@@ -47,12 +47,12 @@ const HeroSection = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="hero-slide-item slider-height swiper-slide bg-color1"
-                                data-bg-image="assets/images/hero/bg/hero-bg-1.webp">
+                                data-bg-image="assets/images/hero/bg/bg.png">
                                 <div className="container h-100">
                                     <div className="row h-100">
                                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 align-self-center sm-center-view">
                                             <div className="hero-slide-content slider-animated-1">
-                                                <span className="category">Welcome To Hmart</span>
+                                                <span className="category">Welcome To n-shop</span>
                                                 <h2 className="title-1">Your Home <br />
                                                     Smart Devices & <br />
                                                     Best Solution </h2>
@@ -64,7 +64,7 @@ const HeroSection = () => {
                                             className="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center position-relative align-items-end">
                                             <div className="show-case">
                                                 <div className="hero-slide-image">
-                                                    <img src="assets/images/hero/inner-img/hero-1-2.png" alt="" />
+                                                    <img src="assets/images/hero/inner-img/hero-1.png" alt="" />
                                                 </div>
                                             </div>
                                         </div>

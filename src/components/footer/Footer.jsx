@@ -111,10 +111,7 @@ const Footer = () => {
                                         src="assets/images/icons/payment.png" alt="payment-image" /></a></div>
                                 </div>
                                 <div className="col-md-6 text-center text-md-start">
-                                    <p className="copy-text"> © 2022 <strong>Hmart</strong> Made With <i className="fa fa-heart"
-                                        aria-hidden="true"></i> By <a className="company-name"
-                                            href="https://themeforest.net/user/codecarnival/portfolio">
-                                            <strong> Codecarnival </strong></a>.</p>
+                                    <p className="copy-text"> © 2022 <strong>n-shop</strong>. All Rights Reserved.</p>
                                 </div>
                             </div>
                         </div>
